@@ -1,3 +1,8 @@
+// last checked with Xcode 9.0b4
+#if swift(>=4.0)
+print("Hello, Swift 4!")
+#endif
+
 func depthFirstSearch(_ graph: Graph, source: Node) -> [String] {
   var nodesExplored = [source.label]
   source.visited = true
@@ -9,8 +14,6 @@ func depthFirstSearch(_ graph: Graph, source: Node) -> [String] {
   }
   return nodesExplored
 }
-
-
 
 let graph = Graph()
 
